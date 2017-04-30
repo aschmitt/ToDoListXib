@@ -20,6 +20,7 @@
 		45BC1EB11EB5F5390086E219 /* TabBarViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45BC1EAF1EB5F5390086E219 /* TabBarViewController1.xib */; };
 		45BC1EB41EB5F5560086E219 /* TabBarViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BC1EB21EB5F5560086E219 /* TabBarViewController2.swift */; };
 		45BC1EB51EB5F5560086E219 /* TabBarViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45BC1EB31EB5F5560086E219 /* TabBarViewController2.xib */; };
+		45BC1EB71EB5F98C0086E219 /* AppDelegate+TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BC1EB61EB5F98C0086E219 /* AppDelegate+TabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		45BC1EAF1EB5F5390086E219 /* TabBarViewController1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabBarViewController1.xib; sourceTree = "<group>"; };
 		45BC1EB21EB5F5560086E219 /* TabBarViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController2.swift; sourceTree = "<group>"; };
 		45BC1EB31EB5F5560086E219 /* TabBarViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabBarViewController2.xib; sourceTree = "<group>"; };
+		45BC1EB61EB5F98C0086E219 /* AppDelegate+TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+TabBar.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				457900271EB3D7E200980132 /* Info.plist */,
 				45BC1EA91EB47C5C0086E219 /* SecoundViewController.swift */,
 				45BC1EAA1EB47C5C0086E219 /* SecoundViewController.xib */,
+				45BC1EB61EB5F98C0086E219 /* AppDelegate+TabBar.swift */,
 			);
 			path = ToDoListXib;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45BC1EB41EB5F5560086E219 /* TabBarViewController2.swift in Sources */,
+				45BC1EB71EB5F98C0086E219 /* AppDelegate+TabBar.swift in Sources */,
 				45BC1EAB1EB47C5C0086E219 /* SecoundViewController.swift in Sources */,
 				4579001C1EB3D7E200980132 /* AppDelegate.swift in Sources */,
 				45BC1EB01EB5F5390086E219 /* TabBarViewController1.swift in Sources */,
