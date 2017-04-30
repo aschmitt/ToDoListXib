@@ -13,9 +13,47 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    var tabViewController1 : TabBarViewController1?
+    var tabViewController2 : TabBarViewController2?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // Initialize the window
+        window = UIWindow.init(frame: UIScreen.main.bounds)
+        
+        // Set Background Color of window
+        window?.backgroundColor = UIColor.white
+        
+        // Allocate memory for an instance of the 'MainViewController' class
+        let mainViewController = MainViewController()
+        
+        // Set the root view controller of the app's window
+        window!.rootViewController = mainViewController
+        
+        // Make the window visible
+        window!.makeKeyAndVisible()
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        //setting the initial screen bounds of the view
+        self.tabViewController1 = TabBarViewController1()
+        self.tabViewController2 = TabBarViewController2()
+        //creating object of TabViewController[1,2,3] class
+        let tabBarController = UITabBarController()
+        //creating object of UITabBarController class
+        tabBarController.viewControllers = [tabViewController1! , tabViewController2!]
+        //adding all three views to the TabBarView
+        let item1 = UITabBarItem(title: "ToDo List", image: nil, tag: 0)
+        let item2 = UITabBarItem(title: "Add new ToDo", image: nil, tag: 1)
+        //defining the items of the TabBar corresponding to three views
+        tabViewController1?.tabBarItem = item1
+        tabViewController2?.tabBarItem = item2
+        //setting TabBarItems corresponding to each view in TabBarController
+        
+        self.window?.rootViewController = tabBarController
+        //setting the initial VieController as tabBarController
+        
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
